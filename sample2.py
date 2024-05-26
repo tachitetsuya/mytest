@@ -9,8 +9,8 @@ def select_A1_in_all_sheets(filedir):
     try:
         files = os.listdir(filedir)
         for file in files:
-#            filepath = filedir + "/" + file
-            filepath = file
+            filepath = filedir + "/" + file
+#            filepath = file
             wb = xw.Book(filepath)
             for sheet in wb.sheets:
                 try:
@@ -33,5 +33,6 @@ def select_A1_in_all_sheets(filedir):
     except Exception as e:
         print(e)
 
-select_A1_in_all_sheets("mytest")
+#select_A1_in_all_sheets("mytest")
+select_A1_in_all_sheets(".")
 
