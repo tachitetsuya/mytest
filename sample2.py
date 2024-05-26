@@ -22,7 +22,6 @@ def select_A1_in_all_sheets(filedir):
             wb.save(filepath)
             wb.close()
            
-            # 表示倍率
             wb = load_workbook(filepath)
             for ws in wb.worksheets:
                 sv = ws.sheet_view
@@ -32,11 +31,6 @@ def select_A1_in_all_sheets(filedir):
             wb.save(filepath)
     except Exception as e:
         print(e)
-
-
-#if(len(sys.argv) <= 1):
-#    print('フォルダを指定してください')
-#    sys.exit()
 
 select_A1_in_all_sheets("mytest/test.xlsx")
 
