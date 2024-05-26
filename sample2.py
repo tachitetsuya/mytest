@@ -25,8 +25,8 @@ def select_A1_in_all_sheets(filedir):
             wb = load_workbook(filepath)
             for ws in wb.worksheets:
                 sv = ws.sheet_view
-                sv.zoomScale = 100
-                sv.zoomScaleNormal = 100
+                sv.zoomScale = 110
+                sv.zoomScaleNormal = 110
                 sv.view = 'normal'
             wb.save(filepath)
     except Exception as e:
