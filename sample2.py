@@ -1,5 +1,5 @@
 import os
-import xlwings as xw
+#import xlwings as xw
 import time
 import sys
 from openpyxl import load_workbook
@@ -10,18 +10,18 @@ def select_A1_in_all_sheets(filedir):
         files = os.listdir(filedir)
         for file in files:
             filepath = filedir + "/" + file
-#            filepath = file
-            wb = xw.Book(filepath)
-            for sheet in wb.sheets:
-                try:
-                    sheet.activate()
-                    sheet.range('A1').select()
-
-                except:
-                    pass
-            wb.sheets[0].activate()
-            wb.save(filepath)
-            wb.close()
+##            filepath = file
+#            wb = xw.Book(filepath)
+#            for sheet in wb.sheets:
+#                try:
+#                    sheet.activate()
+#                    sheet.range('A1').select()
+#
+#                except:
+#                    pass
+#            wb.sheets[0].activate()
+#            wb.save(filepath)
+#            wb.close()
            
             wb = load_workbook(filepath)
             for ws in wb.worksheets:
