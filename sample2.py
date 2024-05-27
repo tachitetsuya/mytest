@@ -8,6 +8,9 @@ def select_A1_in_all_sheets(filedir):
 
     try:
         files = os.listdir(filedir)
+        
+        files = md_files = [i for i in files if i.endswith('.xlsx') == True]
+
         for file in files:
             filepath = filedir + "/" + file
 ##            filepath = file
