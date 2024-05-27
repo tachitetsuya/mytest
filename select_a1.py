@@ -9,5 +9,5 @@ def select_a1_in_all_sheets(file_path):
     workbook.save(file_path)
 
 if __name__ == "__main__":
-    excel_file_path = '/mytest/test2.xlsx'
+    excel_file_path = 'test2.xlsx'
     select_a1_in_all_sheets(excel_file_path)
