@@ -12,6 +12,7 @@ def select_A1_in_all_sheets(filedir):
         files = md_files = [i for i in files if i.endswith('.xlsx') == True]
 
         for file in files:
+            file = "test.xlsx"
             filepath = filedir + "/" + file
 ##            filepath = file
 #            wb = xw.Book(filepath)
