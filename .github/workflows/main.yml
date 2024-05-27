@@ -21,8 +21,8 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install openpyxl
+        pip install openpyxl xlsxwriter
 
     - name: Run Python script
       run: |
-        python select_a1.py
+        python select_a2.py
