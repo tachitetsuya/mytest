@@ -8,7 +8,13 @@ def select_a1_in_all_sheets(file_path):
                 pane='topLeft', activeCell='A1', sqref='A1'
             )
         ]
-    workbook.save(file_path)
+    
+    
+    try:
+        workbook.save(file_path)
+        print("OK")
+    except Exception as e:
+        print(f"e {e]")
 
 if __name__ == "__main__":
     excel_file_path = 'test3.xlsx'
