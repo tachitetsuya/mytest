@@ -33,6 +33,7 @@ def select_A1_in_all_sheets(filedir):
                 sv.zoomScale = 110
                 sv.zoomScaleNormal = 110
                 sv.view = 'normal'
+            print(filepath)
             wb.save(filepath)
     except Exception as e:
         print(e)
