@@ -25,4 +25,4 @@ jobs:
 
     - name: Run Python script
       run: |
-        python select_a4.py
+        python select_a5.py
