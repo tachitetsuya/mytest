@@ -8,7 +8,7 @@ def select_a1_in_all_sheets(file_path):
             sheet.sheet_view.selection = [openpyxl.worksheet.views.Selection(sqref='A1')]
         workbook.save(file_path)
     except Exception as e:
-        print(f"e {e]")
+        print(e)
 
 if __name__ == "__main__":
     excel_file_path = 'test3.xlsx'
